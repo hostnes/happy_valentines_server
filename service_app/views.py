@@ -27,8 +27,8 @@ class ValentineList(generics.ListCreateAPIView):
 
 
 class UserRetrieve(generics.RetrieveUpdateDestroyAPIView):
-    queryset = Valentine.objects.all()
-    serializer_class = ValentineSerializer
+    queryset = User.objects.all()
+    serializer_class = UserSerializer
 
 
 class UserList(generics.ListCreateAPIView):
